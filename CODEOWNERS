@@ -1,0 +1,10 @@
+<box border radius="lg" padding={3} gap={2}>
+  <text color="secondary" size="sm">CODEOWNERS</text>
+  <text preserveWhitespace>{`# Core functionality - changes here should be rare!
+/src/app.py @AayushiShinde
+/src/backend/database.py @AayushiShinde
+/src/backend/routers/auth.py @AayushiShinde
+The frontend will need refactored soon to be more object oriented.
+/src/static/ @AayushiShinde`}</text>
+<button block onClick={() => GenUI.copy("# Core functionality - changes here should be rare!\n/src/app.py @AayushiShinde\n/src/backend/database.py @AayushiShinde\n/src/backend/routers/auth.py @AayushiShinde\n\n# The frontend will need refactored soon to be more object oriented.\n/src/static/ @AayushiShinde")}><icon name="copy" size="xs" inline/> Copy CODEOWNERS content</button>
+</box>
